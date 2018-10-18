@@ -35,6 +35,8 @@ For some reason -- possibly due to how Windows handles scripts, the scripts in c
     
 Then change the "file_name.script.new back to just .script and ./piet-compiler compiler-examples/somefile.script | piet-assembler > out.pnm should work in the main Piet directory.
 
+Also you can try just moving the scripts into the main directory. Temporary fix -- something about how MacOS Terminal operates.
+
 ---
 
 Piet interpreter
