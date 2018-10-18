@@ -6,12 +6,12 @@ Piet
 Piet assembler
 --------------
 
-    ./piet-assembler somefile.piet | pnmtopng > out.png
+    ./piet-assembler somefile.piet > out.pnm
 
 Piet compiler
 -------------
 
-    ./piet-compiler somefile.script | piet-assembler | pnmtopng > out.png
+    ./piet-compiler somefile.script | piet-assembler > out.pnm
 
 See http://www.toothycat.net/wiki/wiki.pl?MoonShadow/Piet for further documentation and samples.   
    
@@ -24,7 +24,7 @@ Piet interpreter
 
 For convenience, a fork of Marc Majcher's Piet interpreter is included. 
 
-    ./piet-assembler assembler-samples/fizzbuzz.piet | pnmtopng > fizzbuzz.png && interpreter/piet fizzbuzz.png
+    ./piet-assembler assembler-samples/fizzbuzz.piet > fizzbuzz.pnm && interpreter/piet fizzbuzz.png
 
 See http://www.majcher.com/code/piet/Piet-Interpreter.html for documentation and updates.
 
