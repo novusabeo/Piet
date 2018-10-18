@@ -19,15 +19,21 @@ Navigate to directory and run
 Piet compiler
 -------------
 
-Navigate to directory and run
+Navigate to main directory and run
 
-    ./piet-compiler somefile.script | piet-assembler > out.pnm
+    ./piet-compiler compiler-examples/somefile.script | piet-assembler > out.pnm
 
 See http://www.toothycat.net/wiki/wiki.pl?MoonShadow/Piet for further documentation and samples.   
    
 Kudos to [Hugh Satow](http://freespace.virgin.net/hugh.satow/midp/) for many assorted tweaks and bugfixes.
 
 Can also output .png usually but to be save outputting .pnm and then converting to .png
+
+For some reason -- possibly due to how Windows handles scripts, the scripts in compiler-examples may not work in MacOS or Linux. For this, run this on each in the compiler-examples directory
+
+    cat file_name.script | tr -d '\r' > file_name.script.new
+    
+Then change the "file_name.script.new back to just .script and ./piet-compiler compiler-examples/somefile.script | piet-assembler > out.pnm should work in the main Piet directory.
 
 ---
 
