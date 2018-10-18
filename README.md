@@ -21,7 +21,7 @@ Piet compiler
 
 Navigate to main directory and run
 
-    ./piet-compiler compiler-examples/somefile.script | piet-assembler > out.pnm
+    ./piet-compiler compiler-examples/somefile.script | ./piet-assembler > out.pnm
 
 See http://www.toothycat.net/wiki/wiki.pl?MoonShadow/Piet for further documentation and samples.   
    
